@@ -27,3 +27,5 @@ const options = {
   
     return { days, hours, minutes, seconds };
   }
+
+  Notiflix.Notify.warning('Please choose a date in the future');
