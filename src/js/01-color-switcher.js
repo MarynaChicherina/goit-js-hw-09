@@ -3,6 +3,13 @@ const startBtn = document.querySelector('button[data-start]');
 const stopBtn = document.querySelector('button[data-stop]');
 const body = document.querySelector('body');
 
+
+startBtn.style.height = '45px';
+startBtn.style.width = '100px';
+stopBtn.style.height = '45px';
+stopBtn.style.width = '100px';
+
+
 //рандомна зміна кольору
 function getRandomHexColor() {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
