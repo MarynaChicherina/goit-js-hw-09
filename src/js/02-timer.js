@@ -35,8 +35,10 @@ function onSelectValidDate(selectedDates) {
    selectedDate = selectedDates.getTime();
    if (selectedDates < Date.now()) {
     Notiflix.Notify.warning('Please choose a date in the future');
-   } 
-  btn.disabled = false;
+   } else {
+    btn.disabled = false;
+   }
+  
 }
 // відлік часу - слухач на кнопку Старт
 btn.addEventListener('click', onBtnClick);
